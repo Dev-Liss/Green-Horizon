@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - R.t.Thenuja Hansana</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pageEditor_validator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Updated navigation bar from home.html -->
+    <nav class="nav" id="nav_bar">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <section class="stud" id="top">
+        <h2>Thenuja Hansna, student 04</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <section> <!-- User Profile Page -->
+                <h2 id="profile">User Profile</h2>
+                <h3>Technical Description</h3>
+                <p>
+                    <strong><u>HTML Structure and Functionality</u></strong><br><br>
+            
+                    <strong>Cover Image:</strong><br>
+                    The `div` with the class `cover-image` is intended to display a large background image for the user's profile, though no image source is set here.<br><br>
+            
+                    <strong>User Avatar:</strong><br>
+                    The user’s profile picture is displayed in a circular shape (via CSS). Below the picture, the user’s name "Thenuja Hansana" and profession "Environmental Researcher" are shown.<br><br>
+            
+                    <strong>About Me Section:</strong><br>
+                    This section contains a brief introduction to the user, where they describe their passion for preserving biodiversity and promoting sustainable land use. There’s a list with personal details such as:
+                    <ul>
+                        <li><strong>Age:</strong> 18</li>
+                        <li><strong>Hometown:</strong> Galle, Ambalangoda</li>
+                        <li><strong>Contact Number:</strong> <a href="#availability" class="contact-number">+94 72-5625879</a></li>
+                    </ul><br>
+            
+                    <strong>Skills, Goals & Experience:</strong><br>
+                    The skills, goals, and experience are displayed in separate boxes:
+                    <ul>
+                        <li><strong>Skills Box:</strong> Lists skills such as "Conservation," "Community Outreach," and "Data Analysis."</li>
+                        <li><strong>Goals Box:</strong> Lists the user’s goals like "Reduce deforestation" and "Promote reforestation."</li>
+                        <li><strong>Experience Box:</strong> Details the user’s experience, such as "5 years in Wildlife Conservation."</li>
+                    </ul><br>
+            
+                    <strong>Progress Bar:</strong><br>
+                    A visual representation of the user’s progress towards their goals with a progress bar that is set to 75%. The progress percentage (75%) is shown inside the bar. Below the progress bar, there’s a label saying "Progress towards my goals."<br><br>
+            
+                    <strong>Volunteering Section:</strong><br>
+                    This section highlights the user's volunteering activities. Each activity is listed with an emoji, such as:
+                    <ul>
+                        <li>🌳 Tree Planting Drives</li>
+                        <li>🐾 Wildlife Conservation Projects</li>
+                        <li>🌍 Community Education on Sustainability</li>
+                    </ul><br>
+            
+                    <strong>Interests Section:</strong><br>
+                    The user’s personal interests are displayed in a list, with images for each:
+                    <ul>
+                        <li>🌿 Forest Conservation</li>
+                        <li>🐒 Wildlife Protection</li>
+                        <li>🌱 Sustainable Agriculture</li>
+                    </ul><br>
+            
+                    <strong>Availability Section:</strong><br>
+                    This section presents the user’s availability in a weekly schedule format (using a table), showing that the user is available from 9 AM to 12 PM on Monday through Friday.<br><br>
+            
+                    <strong>Contact Form Section:</strong><br>
+                    A form is provided for visitors to contact the user. The form includes:
+                    <ul>
+                        <li><strong>Name:</strong> Text input field for the user's name.</li>
+                        <li><strong>Email:</strong> Email input field.</li>
+                        <li><strong>Message:</strong> A text area for a message.</li>
+                    </ul>
+                    There's a "Send" button at the end of the form to submit the details.<br><br>
+                </p>
+            
+                <h3>Link to the validation page</h3>
+                <p><a href="validationstudent4.html#profileVal">Go to validation page for User Profile.</a></p>
+            
+                <h3>Link to the page</h3>
+                <p><a href="user_profile.html">Go to User Profile Page.</a></p>
+            </section>
+
+            <section> <!-- Sitemap Page -->
+                <h2 id="sitemap">Sitemap</h2>
+                <h3>Technical Description</h3>
+                <p>
+                    <strong><u>HTML Structure and Functionality</u></strong><br><br>
+            
+                    <strong>SVG Structure:</strong><br>
+                    The sitemap is created using SVG (Scalable Vector Graphics) to provide precise layout control and interactivity with links.<br><br>
+            
+                    <strong>Navigation:</strong><br>
+                    Each page in the sitemap is represented by a rectangular node, with links to their respective pages. Nodes like "Splash Screen," "Home," "Volunteer," "Table," "User Profile," "Feedback," "Team," and "Sitemap" are connected to create the flow of the website.<br><br>
+            
+                    <strong>Content and Page Editor:</strong><br>
+                    The "Content Pages" and "Page Editor" sections are divided into child nodes like "Content 01," "Content 02," "Student 01," "Student 02," etc., connected to represent their hierarchy.<br><br>
+            
+                    <strong>Interactivity:</strong><br>
+                    Nodes are clickable using <code>&lt;a&gt;</code> tags wrapped around <code>&lt;g&gt;</code> (group) elements in SVG.<br><br>
+            
+                    <strong>Design Considerations:</strong><br>
+                    Different colors are used to distinguish sections, and rounded corners are applied for a smooth appearance. The text is centered for readability.<br><br>
+            
+                    <strong>Lines:</strong><br>
+                    <code>&lt;line&gt;</code> elements are used to connect the nodes, visually representing the flow between pages.<br><br>
+                </p>
+            
+                <h3>Accessibility</h3>
+                <p>
+                    <strong><u>Accessibility Features in the Sitemap</u></strong><br><br>
+            
+                    <strong>1. Semantic HTML:</strong><br>
+                    Proper use of <code>&lt;svg&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;line&gt;</code> elements enhances accessibility.<br><br>
+            
+                    <strong>2. Text Readability & Contrast:</strong><br>
+                    Adequate contrast and easy-to-read fonts are chosen for the text inside each node.<br><br>
+            
+                    <strong>3. Alternative Text for Images:</strong><br>
+                    Images or icons used for nodes will have <code>alt</code> text to ensure accessibility for screen readers.<br><br>
+            
+                    <strong>4. Keyboard & Screen Reader Support:</strong><br>
+                    The sitemap is designed to be navigable using a keyboard and compatible with screen readers.<br><br>
+            
+                    <strong>5. Motion Sensitivity Considerations:</strong><br>
+                    The sitemap avoids excessive animations that may cause discomfort for users with motion sensitivity.<br><br>
+                </p>
+            
+                <h3>Link to the Validation Page</h3>
+                <p><a href="validationstudent4.html#sitemapVal">Go to the validation page for Sitemap.html</a></p>
+            
+                <h3>Link to the Sitemap Page</h3>
+                <p><a href="sitemap.html">Go to Sitemap Page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content4">Content Page 4</h2>
+                <p>In this section, we explore the efforts to combat poaching and its effects on wildlife conservation.</p>
+                
+                <h3>Introduction</h3>
+                <p>Poaching has a significant negative impact on ecosystems around the world. It threatens biodiversity and disrupts natural habitats.</p>
+
+                <figcaption>Impact of poaching on the ecosystem.</figcaption>
+                
+                <h3>Commonly Poached Species</h3>
+                <ul>
+                    <li>Elephants: Targeted for their ivory tusks.</li>
+                    <li>Rhinos: Poached for their horns.</li>
+                    <li>Tigers: Hunted for their pelts and bones.</li>
+                </ul>
+                
+                <h3>Anti-Poaching Measures</h3>
+                <p>Efforts to combat poaching include:</p>
+                <ul>
+                    <li>Increased law enforcement patrols.</li>
+                    <li>Community-based conservation programs.</li>
+                    <li>International collaborations to stop illegal wildlife trade.</li>
+                </ul>
+            
+                <h3>How You Can Help</h3>
+                <p>Individuals can support anti-poaching efforts by:</p>
+                <ul>
+                    <li>Donating to wildlife conservation organizations.</li>
+                    <li>Raising awareness about the dangers of poaching.</li>
+                    <li>Avoiding products made from endangered species.</li>
+                </ul>
+            </section>
+
+            <section><!--challenges-->
+                <h2 id="challenges"> Challenges</h2>
+            
+            
+                <p>
+                    <strong>Privacy Policies:</strong><br>
+                    <ul>
+                        <li><em>GDPR & CCPA Compliance:</em> Collected personal data only with proper user consent and ensured data privacy according to the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA).</li>
+                        <li><em>Privacy Policy:</em> Provided users with a clear privacy policy regarding how their data is handled.</li>
+                    </ul>
+                </p>
+            
+                <p>
+                    <strong>Cookies and Tracking:</strong><br>
+                    <ul>
+                        <li><em>Cookie Consent:</em> Displayed a cookie consent banner to inform users about tracking technologies.</li>
+                        <li><em>Tracking Technologies:</em> Obtained user consent before using cookies or other tracking technologies.</li>
+                    </ul>
+                </p>
+            
+                <p>
+                    <strong>Intellectual Property:</strong><br>
+                    <ul>
+                        <li><em>Content Licensing:</em> Used licensed or original content (images, videos, text) to avoid copyright issues.</li>
+                    </ul>
+                </p>
+            
+                <p>
+                    <strong>Mobile Responsiveness:</strong><br>
+                    <ul>
+                        <li><em>Responsive Design:</em> Ensured the website is mobile-friendly and meets accessibility requirements for all devices.</li>
+                    </ul>
+                </p>
+            
+                <p>
+                    <strong>Data Protection:</strong><br>
+                    <ul>
+                        <li><em>Security Measures:</em> Implemented encryption and SSL certificates to protect sensitive data.</li>
+                    </ul>
+                </p>
+            
+                <p>
+                    <strong>Security:</strong><br>
+                    <ul>
+                        <li><em>Authentication:</em> Used secure authentication methods to prevent unauthorized access to the website.</li>
+                        <li><em>Regular Updates:</em> Maintained up-to-date software and security patches to protect from vulnerabilities.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section><!--compilance-->
+                <h2 id="compliance"> Compliance</h2>
+                <p>
+                    <strong>Accessibility Considerations:</strong><br>
+                    <ul>
+                        <li><em>Semantic HTML:</em> Used proper headings, sections, and lists for better screen reader support.</li>
+                        <li><em>Alt Text for Images:</em> Included descriptive alt attributes for all images to assist visually impaired users.</li>
+                        <li><em>Keyboard Navigation:</em> Ensured all links and buttons are accessible via keyboard controls.</li>
+                        <li><em>Responsive Design:</em> Page adapts to different screen sizes for better usability on all devices.</li>
+                        <li><em>Contrast & Readability:</em> Chose appropriate text color and font size to enhance visibility.</li>
+                    </ul>
+                </p>
+                
+                    
+            </section>
+
+            <section><!--references-->
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                        <li>Canva (2025) <i>Canva.</i> Available at: <a href="https://www.canva.com/">https://www.canva.com/</a> (Last accessed: 11 Mar 2025).</li>
+                        <li>Adobe Stock (2025) <i>Adobe Stock.</i> Available at: <a href="https://stock.adobe.com/">https://stock.adobe.com/</a> (Last accessed: 11 Mar 2025).</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#profile">Profile page </a></li>
+                        <li><a href="#sitemap">Sitemap page</a></li>
+                        <li><a href="#content4">Content page 4</a></li>
+                    </ul>
+                <li><a href="#challenges">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Updated footer from home.html -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <h3>CONTENT</h3>
+                    <ul>
+                        <li><a href="content1.html">Content 1</a></li>
+                        <li><a href="content2.html">Content 2</a></li>
+                        <li><a href="content3.html">Content 3</a></li>
+                        <li><a href="content4.html">Content 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>EDITOR</h3>
+                    <ul>
+                        <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                        <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                        <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                        <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>VALIDATION</h3>
+                    <ul>
+                        <li><a href="validationstudent1.html">Student 1</a></li>
+                        <li><a href="validationstudent2.html">Student 2</a></li>
+                        <li><a href="validationstudent3.html">Student 3</a></li>
+                        <li><a href="validationstudent4.html">Student 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Layout</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="user_profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="social-icons">
+                <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>Design by G24 Group 6 </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- External JavaScript files-->
+    <script src="./js/script.js"></script> 
+</body>
+</html>

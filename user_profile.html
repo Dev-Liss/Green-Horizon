@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/userprofile.css">
+
+</head>
+<body>
+
+    <!-- navigation bar-->
+    <nav class="nav" id="nav_bar">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <main>
+        <section class="user-profile">
+            <!-- Cover Image Section -->
+            <div class="cover-image"></div> <!-- Cover image -->
+
+            <!-- User Avatar Section -->
+            <div class="user-avatar">
+                <img src="./images/userprofile/user_profile.jpg" alt="User Avatar">
+                <h2>Thenuja Hansana</h2>
+                <p>Environmental Researcher</p>
+            </div>
+
+            <!-- About Me Section -->
+            <div class="profile-info">
+                <h3>About Me</h3>
+                <p class="about-me-text">Passionate about preserving biodiversity and promoting sustainable land use. I believe in the power of community action to protect our planet.</p>
+                <ul class="about-me-list">
+                    <li><strong>Age:</strong> 18</li>
+                    <li><strong>Hometown:</strong> Galle, Ambalangoda</li>
+                    <li><strong>Contact Number:</strong> 
+                        <a href="#availability" class="contact-number">+94 72-5625879</a>
+                    </li>
+                </ul>
+
+                <!-- Skills, Goals & Experience Section -->
+                <h3>Skills, Goals & Experience</h3>
+                <div class="boxes-container">
+                    <!-- Skills Box -->
+                    <div class="box">
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>Conservation</li>
+                            <li>Community Outreach</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Goals Box -->
+                    <div class="box">
+                        <h4>Goals</h4>
+                        <ul>
+                            <li>Reduce deforestation</li>
+                            <li>Promote reforestation</li>
+                            <li>Advocate for wildlife protection</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Box -->
+                    <div class="box">
+                        <h4>Experience</h4>
+                        <ul>
+                            <li>5 years in Wildlife Conservation</li>
+                            <li>3 years in Community Education</li>
+                            <li>2 years in Data Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">75%</div>
+                </div>
+                <p>Progress towards my goals</p>
+            </div>
+
+            <!-- Volunteering Section -->
+            <div class="volunteering">
+                <h3>Volunteering Activities</h3>
+                <ul>
+                    <li>🌳 Tree Planting Drives</li>
+                    <li>🐾 Wildlife Conservation Projects</li>
+                    <li>🌍 Community Education on Sustainability</li>
+                </ul>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="interests">
+                <h3>Interests</h3>
+                <ul>
+                    <li>
+                        🌿 Forest Conservation
+                        <img src="./images/userprofile/forest_conv.jpg" alt="Forest Conservation">
+                    </li>
+                    <li>
+                        🐒 Wildlife Protection
+                        <img src="./images/userprofile/wildlife_protect.jpg" alt="Wildlife Protection">
+                    </li>
+                    <li>
+                        🌱 Sustainable Agriculture
+                        <img src="./images/userprofile/SustainableAgriculture.jpg" alt="Sustainable Agriculture">
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Availability Section -->
+            <div class="calendar" id="availability">
+                <h3>Availability</h3>
+                <table>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <td>9-12</td>
+                        <td>9-12</td>
+                        <td>9-12</td>
+                        <td>9-12</td>
+                        <td>9-12</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h3>Contact Me</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- go to top -->
+    <button id="goToTopBtn" onclick="scrollToTop()">To Top</button>
+
+    <!-- main footer section -->
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3>CONTENT</h3>
+                <ul>
+                    <li><a href="content1.html">Content 1</a></li>
+                    <li><a href="content2.html">Content 2</a></li>
+                    <li><a href="content3.html">Content 3</a></li>
+                    <li><a href="content4.html">Content 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>EDITOR</h3>
+                <ul>
+                    <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                    <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                    <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                    <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>VALIDATION</h3>
+                <ul>
+                    <li><a href="validationstudent1.html">Student 1</a></li>
+                    <li><a href="validationstudent2.html">Student 2</a></li>
+                    <li><a href="validationstudent3.html">Student 3</a></li>
+                    <li><a href="validationstudent4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Layout</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-branding">
+            <img src="logo.png" alt="Website Logo" onclick="redirectTo('home.html')">
+            <p>Green Horizon</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Design by G24 Group 6 </p>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript files-->
+<script src="./js/script.js"></script> 
+
+</body>
+</html>

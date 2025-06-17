@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities</title>
+    <link rel="stylesheet" href="./css/volunteer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="volunteer-page">
+    <!-- navigation bar-->
+    <nav class="nav" id="nav_bar">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <!-- Content container that groups all body content with semi-transparent background -->
+    <div class="content-container">
+        <!-- Main content of the page -->
+        <main>
+            <!-- Section for displaying volunteer programs -->
+            <h2>Volunteer Programs</h2>
+
+            <!-- Sorting box for programs -->
+            <div class="sort-box">
+                <label for="sort-programs">Sort by:</label>
+                <select id="sort-programs">
+                    <option value="popularity">Popularity</option>
+                    <option value="date">Date</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <!-- Container for the program cards -->
+            <div class="cards-container">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="./images/volunteer_page/forest.jpg" alt="Forest Conservation Program">
+                    <h3>Forest Conservation Program</h3>
+                    <p>Join our efforts to protect and restore forests around the world.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="./images/volunteer_page/wildlife.jpg" alt="Wildlife Protection Initiative">
+                    <h3>Wildlife Protection Initiative</h3>
+                    <p>Help us safeguard endangered species and their habitats.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="./images/volunteer_page/garden.jpg" alt="Community Garden Project">
+                    <h3>Community Garden Project</h3>
+                    <p>Support local communities in creating sustainable gardens.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="./images/volunteer_page/beach.jpg" alt="Beach Cleanup Campaign">
+                    <h3>Beach Cleanup Campaign</h3>
+                    <p>Participate in cleaning up beaches and protecting marine life.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- Section for user reviews -->
+            <section class="reviews">
+
+                <h2>User Reviews</h2>
+
+                <div class="rating-summary">
+                    <span class="rating">8.9/10</span>
+                    <span class="subtitle">Exceptional (Based on 26 reviews)</span>
+                </div>
+                <!-- Container for individual review cards -->
+                <div class="review-cards">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <h4>10/10 Excellent</h4>
+                        <p>The program was well-organized, and the impact was visible. Highly recommend!</p>
+                        <a href="#">See More</a>
+                        <p class="reviewer">Dulina Sampath - Jan 15, 2024</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <h4>9/10 Great Experience</h4>
+                        <p>I learned a lot and met amazing people. The experience was enriching.</p>
+                        <a href="#">See More</a>
+                        <p class="reviewer">Hansana Fernando - Feb 10, 2025</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <h4>8/10 Very Good</h4>
+                        <p>The program was good, but there's room for improvement in logistics.</p>
+                        <a href="#">See More</a>
+                        <p class="reviewer">Mohommed Injas  - Mar 5, 2023</p>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-card">
+                        <h4>10/10 Life-Changing</h4>
+                        <p>This experience changed my perspective on conservation. Truly inspiring!</p>
+                        <a href="#">See More</a>
+                        <p class="reviewer">Chandul Wanigarathne - Apr 20, 2024</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Section for user feedback form -->
+            <section class="feedback-section">
+                <h2>Share Your Feedback</h2>
+                <div class="feedback-form">
+                    <div class="rating-input">
+                        <p>Rate your experience:</p>
+                        <div class="emoji-buttons">
+                            <button class="emoji-btn" type="button">😞</button>
+                            <button class="emoji-btn" type="button">😕</button>
+                            <button class="emoji-btn" type="button">😐</button>
+                            <button class="emoji-btn" type="button">🙂</button>
+                            <button class="emoji-btn" type="button">😄</button>
+                        </div>
+                    </div>
+                    <textarea placeholder="Write your review here..." rows="5"></textarea>
+                    <div class="form-buttons">
+                        <button class="cancel-btn">Cancel</button>
+                        <button class="submit-btn">Submit Feedback</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- go to top button (now inside the content container) -->
+        <button id="goToTopBtn" onclick="scrollToTop()">To Top</button>
+    </div>
+
+    <!-- main footer section (outside the content container) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <h3>CONTENT</h3>
+                    <ul>
+                        <li><a href="content1.html">Content 1</a></li>
+                        <li><a href="content2.html">Content 2</a></li>
+                        <li><a href="content3.html">Content 3</a></li>
+                        <li><a href="content4.html">Content 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>EDITOR</h3>
+                    <ul>
+                        <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                        <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                        <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                        <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>VALIDATION</h3>
+                    <ul>
+                        <li><a href="validationstudent1">Student 1</a></li>
+                        <li><a href="validationstudent2">Student 2</a></li>
+                        <li><a href="validationstudent3">Student 3</a></li>
+                        <li><a href="validationstudent4">Student 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Layout</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="user_profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-branding">
+                <img src="logo.png" alt="Website Logo" onclick="redirectTo('home.html')">
+                <p>Green Horizon</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>Design by G24 Group 6 </p>
+            </div>
+        </div>
+    </footer>
+        
+    <!-- External JavaScript files-->
+    <script src="./js/script.js"></script> 
+     
+</body>
+</html>

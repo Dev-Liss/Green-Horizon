@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizon</title>
+    
+    <!-- External resources: Font Awesome for icons, Animate.css for animations, and Google Fonts for Poppins font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    
+    <!-- Link to the style sheet-->
+    <link rel="stylesheet" href="css/Splash_Screen.css">
+    
+    <!-- automatically redirects to home.html after 4 seconds -->
+    <meta http-equiv="refresh" content="4; url=home.html">
+</head>
+
+<body>
+    <!-- image background element -->
+    <div class="zoom-container">
+        <img class="zoom-image" src="./images/Splash_Screen/SplashBackground.jpeg" alt="Zooming image">
+      </div>
+    <!-- Main splash screen container -->
+    <div class="splash-container" id="splash">
+
+        <!-- Content box containing all splash screen elements -->
+        <div class="splash-content">
+           
+            <h1 class="website-title">Green Horizon</h1>            
+
+            <p class="mission-statement">
+                <i>Green Horizon is committed to preserving life on land by promoting awareness, sustainability, and biodiversity conservation. 
+                    Through education and action, we strive for a future where nature and humanity thrive together.</i>
+            </p>
+            
+            <!-- Team members section -->
+            <div class="team-members">
+
+                <h2 class="team-title">Green Horizon</h2>
+                <!-- Container for team member pills -->
+                <div class="members-list">
+
+                    <div class="member">Thenuja Hansana</div>
+                    <div class="member">Lisara Mihidinu</div>
+                    <div class="member">Yasidu Janapriya</div>
+                    <div class="member">Rimaz Nowfell</div>
+                </div>
+            </div>
+            
+            <!-- Loading animation container -->
+            <div class="loader-container">
+                <!-- Loading progress bar background -->
+                <div class="loader">
+                    <!-- Progress bar -->
+                    <div class="loader-progress"></div>
+                </div>
+
+                <div class="loader-text">Loading, please wait...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fade out
+        setTimeout(() => {
+            document.getElementById('splash').classList.add('fade-out');
+        }, 3000);
+
+        // Transition effect
+        setTimeout(() => {
+            window.location.href = 'home.html';
+        }, 4000);
+    </script>
+</body>
+</html>

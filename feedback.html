@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback Form</title>
+        
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="./CSS/feedback.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:ital,wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- navigation bar-->
+        <nav class="nav" id="nav_bar">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>  
+        </nav>
+    <main>
+        <h1>Feedback Form</h1>       
+        <div class="feedback-container">
+            <form>
+                <label>Enter your name:</label>
+                <input type="text"  placeholder="Enter Your name">
+                
+                <label>Enter your email:</label>
+                <input type="email"  placeholder="Enter Your email" > 
+                
+                <label>Enter your Phone Number:</label>
+                <input type="tel"  placeholder="Enter Your Phone Number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number (e.g., 1234567890)">
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" ><br>
+
+                <label>Enter Your Address:</label>
+                <textarea name="address" rows="3" cols="50" placeholder="Your Address" ></textarea><br>
+                
+                <label>Was this your first time visiting?</label>
+                <br>
+
+                <div class="radio-group " id="visit">
+                    <input type="radio" name="first-time" value="Yes" > Yes
+                    <input type="radio" name="first-time" value="No"> No
+                </div>
+                <br>
+                
+                <label>Was this website informative and easy to navigate through?</label>
+                <br>
+
+                <div class="radio-group" id="navigate">
+                    <input type="radio" name="informative" value="Yes" > Yes
+                    <input type="radio" name="informative" value="No"> No
+                </div>
+                <br>
+
+                <label>If "No", suggest any improvements for the future:</label>
+                <textarea rows="5" placeholder="Add your messages here..."></textarea>
+                
+                <label>How satisfied are you with our services?</label>
+                <div class="rating-container">
+                    <div class="rating-emojis">
+                        <span>😡</span>
+                        <span>☹️</span>
+                        <span>😐</span>
+                        <span>😊</span>
+                        <span>😍</span>
+                    </div>
+                    <div class="rating-options">
+                        <input type="radio" name="rating" value="1" >
+                        <input type="radio" name="rating" value="2">
+                        <input type="radio" name="rating" value="3">
+                        <input type="radio" name="rating" value="4">
+                        <input type="radio" name="rating" value="5">
+                      
+                    </div>
+                </div>
+            
+                <label>Would you recommend our services?</label>
+                <br>
+
+                <div class="radio-group">
+                    <input type="radio" name="recommend" value="Yes" > Yes
+                    <input type="radio" name="recommend" value="No"> No
+                </div>
+                <br>
+                
+                <label>Would you like to receive updates about the website and any offers?</label>
+                
+                <select>
+                    <option>Yes - via Email</option>
+                    <option>Yes - via SMS</option>
+                    <option>No</option> 
+                </select>
+                
+                <label>Do you have any additional questions or requests?</label>
+                <textarea rows="5" placeholder="Add your message here..."></textarea>
+                
+                <div class="buttons">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>        
+
+        <script>
+            // Wait for the DOM to fully load before executing the script
+            document.addEventListener("DOMContentLoaded", function () {
+                const form = document.querySelector("form");
+
+                form.addEventListener("submit", function (event) {
+                    let valid = true; // Initialize validation flag
+
+                    // Name Validation (Only Letters)
+                    let nameInput = document.querySelector("input[type='text']"); // Select name input field
+                    let namePattern = /^[A-Za-z\s]+$/; // Regular expression to allow only letters and spaces
+                    if (!namePattern.test(nameInput.value.trim())) {
+                        alert("Please enter a valid name (letters only).");
+                        valid = false; // Set validation flag to false
+                    }
+
+                    // Email Validation
+                    let emailInput = document.querySelector("input[type='email']");
+                    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email validation
+                    if (!emailPattern.test(emailInput.value.trim())) {
+                        alert("Please enter a valid email.");
+                        valid = false;
+                    }
+
+                    // Phone Number Validation (Exactly 10 Digits)
+                    let phoneInput = document.querySelector("input[type='tel']");
+                    let phonePattern = /^[0-9]{10}$/; // Regular expression to allow only 10-digit numbers
+                    if (!phonePattern.test(phoneInput.value.trim())) {
+                        alert("Please enter a valid 10-digit phone number.");
+                        valid = false;
+                    }
+
+                    // Prevent Form Submission if Validation Fails
+                    if (!valid) {
+                        event.preventDefault(); // Stop form submission
+                    }
+                });
+            });
+        </script>
+                <!-- go to top -->
+                <button id="goToTopBtn" onclick="scrollToTop()">To Top</button>
+
+
+                <!-- main footer section -->
+         
+                <footer class="footer">
+                 <div class="footer-container">
+                     <div class="footer-sections">
+                         <div class="footer-column">
+                             <h3>CONTENT</h3>
+                             <ul>
+                                 <li><a href="content1.html">Content 1</a></li>
+                                 <li><a href="content2.html">Content 2</a></li>
+                                 <li><a href="content3.html">Content 3</a></li>
+                                 <li><a href="content4.html">Content 4</a></li>
+                             </ul>
+                         </div>
+                         <div class="footer-column">
+                             <h3>EDITOR</h3>
+                             <ul>
+                                 <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                                 <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                                 <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                                 <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                             </ul>
+                         </div>
+                         <div class="footer-column">
+                             <h3>VALIDATION</h3>
+                             <ul>
+                                 <li><a href="validationstudent1.html">Student 1</a></li>
+                                 <li><a href="validationstudent2.html">Student 2</a></li>
+                                 <li><a href="validationstudent3.html">Student 3</a></li>
+                                 <li><a href="validationstudent4.html">Student 4</a></li>
+                             </ul>
+                         </div>
+                         <div class="footer-column">
+                             <h3>Layout</h3>
+                             <ul>
+                                 <li><a href="home.html">Home</a></li>
+                                 <li><a href="volunteer.html">Volunteer</a></li>
+                                 <li><a href="table.html">Table</a></li>
+                                 <li><a href="user_profile.html">User Profile</a></li>
+                                 <li><a href="feedback.html">Feedback</a></li>
+                                 <li><a href="sitemap.html">Sitemap</a></li>
+                                 <li><a href="team.html">Team</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="footer-branding">
+                         <img src="logo.png" alt="Website Logo" onclick="redirectTo('home.html')">
+                         <p>Green Horizon</p>
+                     </div>
+                     <div class="social-icons">
+                         <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                         <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                         <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+                         <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+                     </div>
+                     <div class="footer-bottom">
+                         <p>Design by G24 Group 6 </p>
+                     </div>
+                 </div>
+             </footer>
+             
+            <!-- External JavaScript files-->
+            <script src="./js/script.js"></script>
+         
+    </body>
+</html>

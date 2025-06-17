@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <link rel="stylesheet" href="./css/sitemap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- navigation bar-->
+  <nav class="nav" id="nav_bar">
+      <div class="navbar">
+          <div class="logo">
+              <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+          </div>
+          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+          <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="table.html">Table</a></li>
+              <li><a href="user_profile.html">User Profile</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="team.html">Team</a></li>
+          </ul>
+      </div>  
+  </nav>
+
+  <main>
+    <div class="content">
+      <h1>Sitemap</h1>
+      <svg id="sitemap" width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Splash Screen -->
+        <a href="./Splash_Screen.html">
+          <g class="node-group">
+            <rect x="550" y="10" width="120" height="50" fill="#101010" class="node" data-name="Splash Screen" rx="10" ry="10"/>
+            <text x="610" y="40" font-size="14" fill="white" class="node" text-anchor="middle" dominant-baseline="middle">SPLASH SCREEN</text>
+          </g>
+        </a>
+        
+        <!-- Splash Screen Line -->
+        <line x1="610" y1="60" x2="610" y2="90" stroke="black" stroke-width="2"/>
+        
+        <!-- Home -->
+        <a href="home.html">
+          <g class="node-group">
+            <rect x="550" y="90" width="120" height="50" fill="#202020" class="node" data-name="Home" rx="10" ry="10"/>
+            <text x="585" y="120" font-size="14" fill="white" class="node">HOME</text>
+          </g>
+        </a>
+        
+        <!-- Home Line -->
+        <line x1="610" y1="140" x2="610" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Main Arrow (Removed marker-end) -->
+        <marker id="main" markerWidth="4" markerHeight="4" refX="-22" refY="1.5" orient="90deg" markerUnits="strokeWidth">
+          <path d="M0,0 L0,3 L4.5,1.5 z" fill="black"></path>
+        </marker>
+        
+        <!-- Horizontal Line -->
+        <line x1="110" y1="170" x2="1020" y2="170" stroke="black" stroke-width="2" />
+        
+        <!-- Volunteer -->
+        <a href="volunteer.html">
+          <g class="node-group">
+            <rect x="50" y="200" width="120" height="50" fill="#202020" class="node" data-name="Volunteer" rx="10" ry="10"/>
+            <text x="70" y="230" font-size="14" fill="white">VOLUNTEER</text>
+          </g>
+        </a>
+        <line x1="110" y1="200" x2="110" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Table -->
+        <a href="table.html">
+          <g class="node-group">
+            <rect x="180" y="200" width="120" height="50" fill="#202020" class="node" data-name="Table" rx="10" ry="10"/>
+            <text x="210" y="230" font-size="14" fill="white">TABLE</text>
+          </g>
+        </a>
+        <line x1="240" y1="200" x2="240" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- User Profile -->
+        <a href="user_profile.html">
+          <g class="node-group">
+            <rect x="310" y="200" width="120" height="50" fill="#202020" class="node" data-name="User Profile" rx="10" ry="10"/>
+            <text x="320" y="230" font-size="14" fill="white">USER PROFILE</text>
+          </g>
+        </a>
+        <line x1="370" y1="200" x2="370" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Feedback -->
+        <a href="feedback.html">
+          <g class="node-group">
+            <rect x="440" y="200" width="120" height="50" fill="#202020" class="node" data-name="Feedback" rx="10" ry="10"/>
+            <text x="460" y="230" font-size="14" fill="white">FEEDBACK</text>
+          </g>
+        </a>
+        <line x1="500" y1="200" x2="500" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Team -->
+        <a href="team.html">
+          <g class="node-group">
+            <rect x="570" y="200" width="120" height="50" fill="#202020" class="node" data-name="Team" rx="10" ry="10"/>
+            <text x="600" y="230" font-size="14" fill="white">TEAM</text>
+          </g>
+        </a>
+        <line x1="630" y1="200" x2="630" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Content Pages -->
+        <a href="content.html">
+          <g class="node-group">
+            <rect x="700" y="200" width="120" height="50" fill="#202020" class="node" data-name="Content Pages" rx="10" ry="10"/>
+            <text x="760" y="230" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">CONTENT PAGES</text>
+          </g>
+        </a>
+        <line x1="760" y1="200" x2="760" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Site Map -->
+        <a href="sitemap.html">
+          <g class="node-group">
+            <rect x="830" y="200" width="120" height="50" fill="#202020" class="node" data-name="Site Map" rx="10" ry="10"/>
+            <text x="850" y="230" font-size="14" fill="white">SITE MAP</text>
+          </g>
+        </a>
+        <line x1="890" y1="200" x2="890" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Page Editor -->
+        <a href="pageEditor.html">
+          <g class="node-group">
+            <rect x="960" y="200" width="120" height="50" fill="#202020" class="node" data-name="Page Editor" rx="10" ry="10"/>
+            <text x="970" y="230" font-size="14" fill="white">PAGE EDITOR</text>
+          </g>
+        </a>
+        <line x1="1020" y1="200" x2="1020" y2="170" stroke="black" stroke-width="2"/>
+        
+        <!-- Content Pages Children -->
+        <!-- Vertical Line for Content Pages Children -->
+        <line x1="760" y1="250" x2="760" y2="510" stroke="black" stroke-width="2"/>
+        
+        <!-- Content 01 -->
+        <a href="content1.html">
+          <g class="node-group">
+            <rect x="700" y="300" width="120" height="50" fill="#303030" class="node" data-name="Content 01" rx="10" ry="10"/>
+            <text x="720" y="330" font-size="14" fill="white">CONTENT 01</text>
+          </g>
+        </a>
+        
+        <!-- Content 02 -->
+        <a href="content2.html">
+          <g class="node-group">
+            <rect x="700" y="370" width="120" height="50" fill="#303030" class="node" data-name="Content 02" rx="10" ry="10"/>
+            <text x="720" y="400" font-size="14" fill="white">CONTENT 02</text>
+          </g>
+        </a>
+        
+        <!-- Content 03 -->
+        <a href="content3.html">
+          <g class="node-group">
+            <rect x="700" y="440" width="120" height="50" fill="#303030" class="node" data-name="Content 03" rx="10" ry="10"/>
+            <text x="720" y="470" font-size="14" fill="white">CONTENT 03</text>
+          </g>
+        </a>
+        
+        <!-- Content 04 -->
+        <a href="content4.html">
+          <g class="node-group">
+            <rect x="700" y="510" width="120" height="50" fill="#303030" class="node" data-name="Content 04" rx="10" ry="10"/>
+            <text x="720" y="540" font-size="14" fill="white">CONTENT 04</text>
+          </g>
+        </a>
+        
+        <!-- Page Editor Children -->
+        <!-- Vertical Line for Page Editor Children -->
+        <line x1="1020" y1="250" x2="1020" y2="510" stroke="black" stroke-width="2"/>
+        
+        <!-- Student 01 -->
+        <a href="pageeditorstudent1.html">
+          <g class="node-group">
+            <rect x="960" y="300" width="120" height="50" fill="#303030" class="node" data-name="Student 01" rx="10" ry="10"/>
+            <text x="980" y="330" font-size="14" fill="white">STUDENT 01</text>
+          </g>
+        </a>
+        
+        <!-- Student 02 -->
+        <a href="pageeditorstudent2.html">
+          <g class="node-group">
+            <rect x="960" y="370" width="120" height="50" fill="#303030" class="node" data-name="Student 02" rx="10" ry="10"/>
+            <text x="980" y="400" font-size="14" fill="white">STUDENT 02</text>
+          </g>
+        </a>
+        
+        <!-- Student 03 -->
+        <a href="pageeditorstudent3.html">
+          <g class="node-group">
+            <rect x="960" y="440" width="120" height="50" fill="#303030" class="node" data-name="Student 03" rx="10" ry="10"/>
+            <text x="980" y="470" font-size="14" fill="white">STUDENT 03</text>
+          </g>
+        </a>
+        
+        <!-- Student 04 -->
+        <a href="pageeditorstudent4.html">
+          <g class="node-group">
+            <rect x="960" y="510" width="120" height="50" fill="#303030" class="node" data-name="Student 04" rx="10" ry="10"/>
+            <text x="980" y="540" font-size="14" fill="white">STUDENT 04</text>
+          </g>
+        </a>
+        
+      </svg>
+    </div>
+  </main>  
+
+  <!-- go to top -->
+  <button id="goToTopBtn" onclick="scrollToTop()">To Top</button>
+
+  <!-- main footer section -->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3>CONTENT</h3>
+                <ul>
+                    <li><a href="content1.html">Content 1</a></li>
+                    <li><a href="content2.html">Content 2</a></li>
+                    <li><a href="content3.html">Content 3</a></li>
+                    <li><a href="content4.html">Content 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>EDITOR</h3>
+                <ul>
+                    <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                    <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                    <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                    <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>VALIDATION</h3>
+                <ul>
+                    <li><a href="validationstudent1.html">Student 1</a></li>
+                    <li><a href="validationstudent2.html">Student 2</a></li>
+                    <li><a href="validationstudent3.html">Student 3</a></li>
+                    <li><a href="validationstudent4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Layout</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-branding">
+            <img src="logo.png" alt="Website Logo" onclick="redirectTo('home.html')">
+            <p>Green Horizon</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Design by G24 Group 6 </p>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript files-->
+<script src="./js/script.js"></script> 
+
+</body>
+</html>
