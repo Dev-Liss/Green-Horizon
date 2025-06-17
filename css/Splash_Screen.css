@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS Variables for color scheme */
+:root {
+    --light-green: #7FC8A9; 
+    --pale-green: #D5EEBB;
+    --medium-green: #5F7A61; 
+    --dark-green: #444941; 
+}
+
+/* Body styles */
+body {
+    overflow: hidden; 
+    background-color: var(--pale-green); 
+}
+
+/* Container for zooming image */
+.zoom-container {
+    overflow: hidden;
+  }
+ 
+  /* Zooming image styles */
+  .zoom-image {
+    width: 100%;
+    animation: slow-zoom 10s ease infinite alternate;
+  }
+
+/* Main splash container */
+.splash-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+    z-index: 200;
+}
+
+/* Content box containing all splash screen information */
+.splash-content {
+    background-color: rgba(68, 73, 65, 0.8); 
+    padding: 2rem; 
+    border-radius: 10px;
+    max-width: 90%; 
+    width: 600px; 
+    border: 2px solid var(--light-green); 
+}
+
+/* Main website title styling */
+.website-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--light-green);
+    font-weight: 600;
+}
+
+/* Subtitle styling (Life on Land) */
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--pale-green);
+    font-weight: 400;
+}
+
+/* Mission statement paragraph styling */
+.mission-statement {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    color: var(--pale-green);
+    font-weight: 300;
+}
+
+/* Team members section container */
+.team-members {
+    margin-bottom: 2rem;
+}
+
+/* Team section title styling */
+.team-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--light-green);
+}
+
+/* Container for team member name pills */
+.members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Individual team member name pill styling */
+.member {
+    background-color: var(--medium-green);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+/* Container for loading animation */
+.loader-container {
+    margin-top: 2rem;
+}
+
+/* Loader bar background */
+.loader {
+    width: 150px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Loading progress bar animation */
+.loader-progress {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: var(--light-green);
+    border-radius: 4px;
+    animation: loading 4s linear forwards;
+}
+
+/* Loading text below progress bar */
+.loader-text {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: var(--pale-green);
+    font-weight: 300;
+}
+
+/* Loading animation keyframes */
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+    img {
+        animation: zoom-in 4s ease-in-out;
+      }
+    
+}
+
+@keyframes slow-zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .splash-content {
+        padding: 1.5rem;
+        width: 90%;
+    }
+    
+    .website-title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .mission-statement {
+        font-size: 1rem;
+    }
+    
+    .team-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .splash-content {
+        padding: 1rem;
+        width: 95%;
+    }
+    
+    .website-title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mission-statement {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .team-title {
+        font-size: 1.1rem;
+    }
+    
+    .member {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .loader {
+        width: 120px;
+    }
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
