@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page 2</title>
+    <!-- External CSS file link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/Contentpage.css">
+
+    <style>
+        /* Header styling with background image */
+       header {
+           background-image: url('images/content2/content2p1.jpeg');
+           background-size: cover;
+           background-position: center;
+           color: rgb(255, 255, 255);
+           padding: 20px;
+           text-align: center;
+           border-radius: 5px;
+           margin-bottom: 20px;
+       }
+    </style>
+    
+</head>
+
+<body>
+    <!-- navigation bar-->
+    <nav class="nav" id="nav_bar">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>  
+    </nav>
+    <main>
+    <!-- Page header with background image -->
+    <header>
+        <h1 class="title">Deforestation: Causes, Consequences, and Solutions</h1>
+        <p>Protecting, Restoring, and Promoting Sustainable Use of Forests</p>
+    </header>
+    
+    <!-- Table of contents navigation -->
+    <nav class="contents">
+        <h3>Contents</h3>
+        <div class="column-container">
+            <!-- Navigation organized in columns for better layout -->
+            <div class="column">
+                <ul>
+                    <li data-number="1"><a href="#introduction">Introduction</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li data-number="2"><a href="#deforestation-causes">Causes of Deforestation</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li data-number="3"><a href="#deforestation-consequences">Consequences of Deforestation</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li data-number="4"><a href="#solutions">Solutions to Deforestation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Introduction section -->
+    <section id="introduction">
+        <h2>1. Introduction to Deforestation</h2>
+        <p>Deforestation is the large-scale clearing of forests, often to make way for agriculture, infrastructure, or urban expansion. Every year, approximately 10 million hectares of forest are lost, affecting biodiversity and climate stability. It is one of the most pressing environmental issues that threaten the well-being of humans, wildlife, and the planet as a whole.</p>
+        
+        <!-- Image with caption -->
+        <div class="image-container">
+            <img src="./images/content2/content2p2.jpeg" alt="Large-scale deforestation in a forest">
+            <p class="caption">Deforestation is one of the leading causes of environmental degradation.</p>
+        </div>
+        
+        <p>Forests provide numerous services, including regulating the climate, supporting biodiversity, and offering livelihoods for indigenous communities. However, the rate of forest loss has accelerated due to various factors, putting at risk the future of these ecosystems.</p>
+    </section>
+    
+    <!-- Causes of Deforestation section -->
+    <section id="deforestation-causes">
+        <h2>2. Causes of Deforestation</h2>
+        <p>Deforestation occurs due to a variety of reasons, many of which are driven by human activities. Understanding the root causes is essential to developing effective solutions to combat this issue.</p>
+        
+        <h3>Key Causes of Deforestation</h3>
+        <ul>
+            <li><strong>Agriculture:</strong> Clearing forests to make space for crops and livestock farming is the primary driver of deforestation, particularly in tropical regions.</li>
+            <li><strong>Urbanization:</strong> As populations grow, forests are cleared for the development of cities, roads, and infrastructure.</li>
+            <li><strong>Logging:</strong> Industrial logging for timber, paper, and other wood products contributes significantly to forest destruction.</li>
+            <li><strong>Mining:</strong> Extracting valuable minerals and oil from forested areas leads to deforestation and ecosystem destruction.</li>
+        </ul>
+        
+    </section>
+    
+    <!-- Consequences of Deforestation section -->
+    <section id="deforestation-consequences">
+        <h2>3. Consequences of Deforestation</h2>
+        <p>Deforestation has severe and far-reaching impacts on the environment, society, and the global climate. The loss of forests affects not only wildlife but also human communities that depend on forest ecosystems for their survival.</p>
+        
+        <h3>Environmental and Social Impacts</h3>
+        <ul>
+            <li><strong>Loss of Biodiversity:</strong> Forests are home to a wide variety of species, many of which face extinction due to habitat destruction.</li>
+            <li><strong>Climate Change:</strong> Forests act as carbon sinks, and their destruction contributes significantly to the release of carbon dioxide, exacerbating global warming.</li>
+            <li><strong>Soil Erosion:</strong> Without tree roots to anchor the soil, deforestation leads to increased erosion, desertification, and a loss of soil fertility.</li>
+            <li><strong>Displacement of Communities:</strong> Indigenous communities that rely on forests for food, medicine, and shelter are often displaced when forests are cleared.</li>
+        </ul>
+        
+        <div class="image-container">
+            <img src="./images/content2/content2p3.jpeg" alt="Soil erosion and loss of biodiversity due to deforestation">
+            <p class="caption">Deforestation leads to soil erosion, loss of biodiversity, and disrupted ecosystems.</p>
+        </div>
+    </section>
+    
+    <!-- Solutions to Deforestation section -->
+    <section id="solutions">
+        <h2>4. Solutions to Deforestation</h2>
+        <p>Despite the scale of the deforestation crisis, there are various strategies that can be implemented to reduce forest loss and restore damaged ecosystems. A combination of policy reforms, technological innovation, and community engagement can help tackle this problem.</p>
+        
+        <h3>Sustainable Land Use Practices</h3>
+        <ul>
+            <li><strong>Agroforestry:</strong> Combining trees with crops or livestock in agricultural systems helps maintain forest cover and enhance biodiversity.</li>
+            <li><strong>Reforestation:</strong> Planting trees in areas where forests have been lost can restore ecosystems and help mitigate climate change.</li>
+            <li><strong>Stronger Policies:</strong> Governments should enforce stricter logging restrictions and promote sustainable land-use policies.</li>
+            <li><strong>Alternative Products:</strong> Promoting the use of sustainable materials such as bamboo and recycled products can reduce reliance on wood from forests.</li>
+        </ul>
+        
+        <h3>What You Can Do</h3>
+        <ul>
+            <li>Support reforestation projects by donating or volunteering with environmental organizations.</li>
+            <li>Choose products that are sustainably sourced, such as FSC-certified wood and paper.</li>
+            <li>Reduce paper consumption by going digital whenever possible.</li>
+            <li>Raise awareness about the importance of forests and the need for conservation.</li>
+        </ul>
+        
+        <div class="highlight">
+            <p>By taking action now, we can help protect forests for future generations and combat the growing threat of climate change.</p>
+        </div>
+    </section>
+    </main>
+    <!-- go to top -->
+    <button id="goToTopBtn" onclick="scrollToTop()">To Top</button>
+
+
+    <!-- main footer section -->
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3>CONTENT</h3>
+                <ul>
+                    <li><a href="content1.html">Content 1</a></li>
+                    <li><a href="content2.html">Content 2</a></li>
+                    <li><a href="content3.html">Content 3</a></li>
+                    <li><a href="content4.html">Content 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>EDITOR</h3>
+                <ul>
+                    <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                    <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                    <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                    <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>VALIDATION</h3>
+                <ul>
+                    <li><a href="validationstudent1.html">Student 1</a></li>
+                    <li><a href="validationstudent2.html">Student 2</a></li>
+                    <li><a href="validationstudent3.html">Student 3</a></li>
+                    <li><a href="validationstudent4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Layout</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-branding">
+            <img src="logo.png" alt="Website Logo" onclick="redirectTo('home.html')">
+            <p>Green Horizon</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Design by G24 Group 6 </p>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript files-->
+<script src="./js/script.js"></script> 
+
+</body>
+</html>

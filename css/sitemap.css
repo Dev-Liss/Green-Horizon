@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  margin: 0;
+  background: linear-gradient(135deg, #187537, #9eebc7);
+  font-family: 'Poppins', sans-serif;
+}
+main {
+  margin: 70px auto 0 auto;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 40px; 
+  color: #e3eae8;
+  font-weight: bold; 
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+}
+
+.node-group rect {
+  transition: fill 0.4s ease;
+}
+
+.node-group rect:hover {
+  fill: #267abf;
+  cursor: pointer; 
+}
+
+line {
+  stroke: rgb(108, 88, 88);
+  stroke-width: 2;
+}

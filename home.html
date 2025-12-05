@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    </head>
+    <body>
+        <!-- navigation bar-->
+        <nav class="nav" id="nav_bar">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>  
+        </nav>
+
+       <!-- bg image section -->
+
+        <div class="bg-container">
+            <img src="./images/bg1.jpg" alt="Background Image" class="bg-image"> 
+            <div class="content">
+                <h1>Save the Environment!<br>Let's Grow Plants</h1>
+                <p>Lets plant 1 Milion plants all over the world.</p>
+                <button class="button" onclick="redirectTo('table.html')">Join Us</button>
+            </div>
+        </div>
+
+       <!-- cards-->
+        
+        <section class="card-container" id="section1">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="./Icons/plant.png" alt="Save Our Forest">
+                </div>
+                <h3>Save Our Forest</h3>
+                <p>Plant a tree today, grow a greener tomorrow. Join our efforts to restore vital forests and combat climate change.</p>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon">
+                    <img src="./Icons/worldwide.png" alt="Save Our World">
+                </div>
+                <h3>Save Our World</h3>
+                <p>Every action counts.  Contribute to sustainable practices and help build a resilient future for generations to come.</p>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon">
+                    <img src="./Icons/recycling.png" alt="Recycling">
+                </div>
+                <h3>Recycling</h3>
+                <p>Reduce, reuse, recycle. Simple steps, big impact. Learn how to minimize waste and protect our natural resources.</p>
+            </div>
+        </section>
+
+       <!-- content pages-->
+
+
+        <div class="content-container">
+            <div class="content-box" onclick="redirectTo('content1.html')">
+                <img src="./images/content1/HeadingBG.jpeg" alt="Image 1">
+                <p class="content-text">The Importance of Biodiversity Conservation</p>
+                <span class="read-more">Read More</span>
+            </div>
+            <div class="content-box" onclick="redirectTo('content2.html')">
+                <img src="./images/content2/content2p1.jpeg" alt="Image 2">
+                <p class="content-text">Deforestation: Causes, Consequences, and Solutions</p>
+                <span class="read-more">Read More</span>
+            </div>
+            <div class="content-box" onclick="redirectTo('content3.html')">
+                <img src="./images/content4p2.jpeg" alt="Image 3">
+                <p class="content-text">Sustainable Agriculture and Land Management</p>
+                <span class="read-more">Read More</span>
+            </div>
+            <div class="content-box" onclick="redirectTo('content4.html')">
+                <img src="./images/illegalwildlife.jpg" alt="Image 4">
+                <p class="content-text">Protection of Wildlife and Illegal Hunting</p>
+                <span class="read-more">Read More</span>
+            </div>
+        </div>
+        <!-- go to top -->
+        <button id="goToTopBtn" onclick="scrollToTop()">To Top</button>
+
+        
+        <!-- footer image for home page -->
+       
+        <div class="footer_image">
+            <img src="./images/footerbg.png" alt="Footer image">
+        </div>
+
+       <!-- main footer section -->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-sections">
+                    <div class="footer-column">
+                        <h3>CONTENT</h3>
+                        <ul>
+                            <li><a href="content1.html">Content 1</a></li>
+                            <li><a href="content2.html">Content 2</a></li>
+                            <li><a href="content3.html">Content 3</a></li>
+                            <li><a href="content4.html">Content 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>EDITOR</h3>
+                        <ul>
+                            <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                            <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                            <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                            <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>VALIDATION</h3>
+                        <ul>
+                            <li><a href="validationstudent1.html">Student 1</a></li>
+                            <li><a href="validationstudent2.html">Student 2</a></li>
+                            <li><a href="validationstudent3.html">Student 3</a></li>
+                            <li><a href="validationstudent4.html">Student 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Layout</h3>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="volunteer.html">Volunteer</a></li>
+                            <li><a href="table.html">Table</a></li>
+                            <li><a href="user_profile.html">User Profile</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="team.html">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-branding">
+                    <img src="logo.png" alt="Website Logo" onclick="redirectTo('home.html')">
+                    <p>Green Horizon</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>Design by G24 Group 6 </p>
+                </div>
+            </div>
+        </footer>
+        
+       <!-- External JavaScript files-->
+       <script src="./js/script.js"></script> 
+
+    </body>
+</html>

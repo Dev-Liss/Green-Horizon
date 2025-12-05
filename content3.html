@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page 3</title>
+    <!-- External CSS file link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/Contentpage.css">
+
+    <style>
+        /* Header styling with background image */
+       header {
+           background-image: url('./images/content4p3.jpeg');
+           background-size: cover;
+           background-position: center;
+           color: rgb(255, 255, 255);
+           padding: 20px;
+           text-align: center;
+           border-radius: 5px;
+           margin-bottom: 20px;
+       }
+    </style>
+</head>
+<body>
+    <!-- navigation bar-->
+    <nav class="nav" id="nav_bar">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>  
+    </nav>
+    <main>
+    <!-- Page header with background image -->
+    <header>
+        <h1 class="title">Sustainable Agriculture and Land Management</h1>
+        <p>Preserving the Environment Through Sustainable Farming Practices</p>
+    </header>
+    
+    <!-- Table of contents navigation -->
+    <nav class="contents">
+        <h3>Contents</h3>
+        <div class="column-container">
+            <div class="column">
+                <ul>
+                    <li data-number="1"><a href="#role">The Role of Sustainable Farming</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li data-number="2"><a href="#challenges">Challenges in Sustainable Agriculture</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li data-number="3"><a href="#practices">Eco-Friendly Farming Practices</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li data-number="4"><a href="#support">Supporting Sustainable Agriculture</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Role of Sustainable Farming section -->
+    <section id="role">
+        <h2>1. The Role of Sustainable Farming</h2>
+        <p>Sustainable agriculture focuses on producing food while preserving natural resources. It ensures:</p>
+        <ul>
+            <li><strong>Healthy soil:</strong> Retains nutrients and supports long-term crop growth.</li>
+            <li><strong>Efficient water use:</strong> Prevents wastage and reduces contamination.</li>
+            <li><strong>Reduced chemical usage:</strong> Minimizes pollution and promotes biodiversity.</li>
+        </ul>
+        <div class="image-container">
+            <img src="./images/content4p2.jpeg" alt="Sustainable farming with diverse crops">
+            <p class="caption">Sustainable farming ensures long-term agricultural productivity.</p>
+        </div>
+    </section>
+    
+    <!-- Challenges in Sustainable Agriculture section -->
+    <section id="challenges">
+        <h2>2. Challenges in Sustainable Agriculture</h2>
+        <p>Despite its benefits, sustainable farming faces several obstacles:</p>
+        <ul>
+            <li><strong>Chemical overuse:</strong> Excess pesticides harm soil and biodiversity.</li>
+            <li><strong>Water scarcity:</strong> Poor irrigation systems lead to wastage and droughts.</li>
+            <li><strong>Soil degradation:</strong> Intensive farming strips soil of essential nutrients.</li>
+            <li><strong>Rising food demand:</strong> Leads to deforestation for expanding farmland.</li>
+        </ul>
+
+    </section>
+    
+    <!-- Eco-Friendly Farming Practices section -->
+    <section id="practices">
+        <h2>3. Eco-Friendly Farming Practices</h2>
+        <p>Adopting eco-friendly farming techniques helps maintain environmental balance:</p>
+        <ul>
+            <li><strong>Crop rotation:</strong> Growing different crops each season to improve soil fertility.</li>
+            <li><strong>Organic farming:</strong> Using natural fertilizers and pesticides.</li>
+            <li><strong>Agroforestry:</strong> Integrating trees and plants into farming systems.</li>
+            <li><strong>Renewable energy:</strong> Using solar and wind-powered farming tools.</li>
+        </ul>
+    </section>
+    
+    <!-- Supporting Sustainable Agriculture section -->
+    <section id="support">
+        <h2>4. Supporting Sustainable Agriculture</h2>
+        <p>Everyone can contribute to promoting sustainable agriculture:</p>
+        <ul>
+            <li>Buy organic and locally sourced food to reduce transportation emissions.</li>
+            <li>Reduce food waste by consuming responsibly and composting leftovers.</li>
+            <li>Advocate for policies that support sustainable farming and conservation.</li>
+            <li>Educate farmers and communities about eco-friendly agricultural techniques.</li>
+        </ul>
+        <div class="image-container">
+            <img src="./images/content4p3.jpeg" alt="Suitable farming place">
+            <p class="caption">Supporting sustainable agriculture helps build a healthier planet.</p>
+        </div>
+        <div class="highlight">
+            <p>By choosing sustainable practices, we can protect the environment and ensure food security for future generations.</p>
+        </div>
+    </section>
+    </main>
+    
+    <!-- go to top -->
+    <button id="goToTopBtn" onclick="scrollToTop()">To Top</button>
+
+    <!-- main footer section -->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3>CONTENT</h3>
+                <ul>
+                    <li><a href="content1.html">Content 1</a></li>
+                    <li><a href="content2.html">Content 2</a></li>
+                    <li><a href="content3.html">Content 3</a></li>
+                    <li><a href="content4.html">Content 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>EDITOR</h3>
+                <ul>
+                    <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                    <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                    <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                    <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>VALIDATION</h3>
+                <ul>
+                    <li><a href="validationstudent1.html">Student 1</a></li>
+                    <li><a href="validationstudent2.html">Student 2</a></li>
+                    <li><a href="validationstudent3.html">Student 3</a></li>
+                    <li><a href="validationstudent4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Layout</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-branding">
+            <img src="logo.png" alt="Website Logo" onclick="redirectTo('home.html')">
+            <p>Green Horizon</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Design by G24 Group 6 </p>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript files-->
+<script src="./js/script.js"></script> 
+
+</body>
+</html>

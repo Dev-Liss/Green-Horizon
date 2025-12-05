@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student- Lisara Mihidinu Mendis</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pageEditor_validator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Updated navigation bar from home.html -->
+    <nav class="nav" id="nav_bar">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" onclick="redirectTo('home.html')">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <section class="stud" id="top">
+        <h2>Lisara Mihidinu, student 1</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <section> <!--Splash screen-->
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            <strong><u>HTML Structure and Functionality</u></strong><br><br>
+                        
+                            <strong>&lt;meta&gt; Tags:</strong><br>
+                            - Ensures character encoding (<code>UTF-8</code>) and responsive design (<code>viewport</code>).<br>
+                            - Implements automatic redirection (<code>&lt;meta http-equiv="refresh" content="4; url=home.html"&gt;</code>), ensuring users transition to <code>home.html</code> after 4 seconds.<br><br>
+                        
+                            <strong>External Libraries:</strong><br>
+                            - Uses <strong>Font Awesome</strong> for icons.<br>
+                            - <strong>Google Fonts</strong> (Poppins) for modern typography.<br>
+                            - <strong>Animate.css</strong> for animations.<br><br>
+                        
+                            <strong>Key Containers:</strong><br>
+                            - <code>.zoom-container</code> & <code>.zoom-image</code>: Displays and animates a background image using CSS.<br>
+                            - <code>.splash-container</code>: Main container positioned <code>fixed</code>, ensuring full-screen coverage.<br>
+                            - <code>.splash-content</code>: The content box with <code>rgba</code> background for transparency and rounded corners.<br><br>
+                        
+                            <strong>Team Section:</strong><br>
+                            - <code>.members-list</code>: Displays team names as styled pills.<br>
+                            - <code>.member</code>: Styled name badges with background color.<br><br>
+                        
+                            <strong>Loading Animation:</strong><br>
+                            - <code>.loader</code>: The loading bar with a background color.<br>
+                            - <code>.loader-progress</code>: Animates from <code>0%</code> to <code>100%</code> width in <code>4s</code>.<br><br>
+                                                
+                            <strong><u>CSS Styling and Effects</u></strong><br><br>
+                        
+                            <strong>Global Styles:</strong><br>
+                            - Resets margins, paddings (<code>*</code> selector).<br>
+                            - Implements <strong>CSS variables</strong> (<code>:root</code>) for color consistency.<br><br>
+                        
+                            <strong>Typography & Colors:</strong><br>
+                            - Uses <strong>Poppins</strong> font with varying weights.<br>
+                            - Ensures readability with <strong>contrasting colors</strong>.<br><br>
+                        
+                            <strong>Background and Animation:</strong><br>
+                            - <code>.zoom-image</code> scales between <code>1x</code> and <code>1.2x</code> using <code>@keyframes slow-zoom</code> (<code>10s</code> duration).<br>
+                            - <code>.loader-progress</code> animates width (<code>4s</code>).<br><br>
+                        
+                            <strong>Responsiveness:</strong><br>
+                            - Uses <strong>media queries</strong> to adjust padding, font sizes, and container width for mobile screens.<br><br>
+                        
+                            <strong><u>JavaScript</u></strong><br>
+                            - Applies a <strong>fade-out effect</strong> before redirection.<br><br>
+                        
+                        </p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>
+                            <strong><u>Accessibility Features in the Splash Screen Page</u></strong><br><br>
+                        
+                            <strong>1. Semantic HTML:</strong><br>
+                            - Used proper tags like <code>&lt;h1&gt;</code> for titles and <code>&lt;p&gt;</code> for text to improve screen reader compatibility.<br><br>
+                        
+                            <strong>2. Text Readability & Contrast:</strong><br>
+                            - Ensured high contrast between text and background for visibility.<br>
+                            - Used scalable font sizes (<code>rem</code>) so users can adjust text size as needed.<br><br>
+                        
+                            <strong>3. Alternative Text for Images:</strong><br>
+                            - Included an <code>alt</code> attribute for images (<code>&lt;img src="..." alt="Zooming image"&gt;</code>) to describe content for visually impaired users.<br><br>
+                        
+                            <strong>4. Keyboard & Screen Reader Support:</strong><br>
+                            - Ensured interactive elements can be navigated using a keyboard.<br>
+                            - Avoided empty <code>&lt;div&gt;</code> elements to prevent confusion for screen readers.<br><br>
+                        
+                            <strong>5. Motion Sensitivity Considerations:</strong><br>
+                            - Used smooth, non-intrusive animations (<code>@keyframes slow-zoom</code>) to avoid discomfort for users with motion sensitivities.<br><br>
+                        
+                        </p>
+                    
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validationstudent1.html">Go to validation page for Splash screen</a></p>
+
+                    <h3>Link to the page</h3>
+                        <p><a href="Splash_Screen.html">Go to splash Screen.</a></p>
+            </section>
+
+            <section><!--volunteer page-->
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            <h5>1. HTML Structure &amp; Key Tags</h5>
+                            -The HTML file follows a structured format with semantic elements for readability and accessibility.
+                        
+                            <h6>1.1 Key Sections and Their Purpose:</h4>
+
+                            <strong>- Head Section (&lt;head&gt;)</strong><br>
+                            <ul>
+                                <li>Contains metadata for character encoding (&lt;meta charset="UTF-8"&gt;) and responsive design (&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;).</li>
+                                <li>Links to external stylesheets and FontAwesome for icons.</li>
+                            </ul>
+
+                            <strong>- Navigation Bar (&lt;nav&gt;)</strong>
+                            <ul>
+                                <li>Uses &lt;ul&gt; and &lt;li&gt; elements for menu items.</li>
+                                <li>A hamburger menu (&lt;div class="menu-toggle"&gt;&amp;#9776;&lt;/div&gt;) is included for mobile navigation.</li>
+                                <li>The logo inside &lt;div class="logo"&gt; is clickable, leading to home.html.</li>
+                            </ul>
+
+                            <strong>- Sorting Box (&lt;div class="sort-box"&gt;)</strong>
+                            <ul>
+                            <li>Allows users to sort programs using a dropdown (&lt;select&gt;).</li>
+                            </ul>
+                        
+                            <strong>- Volunteer Program Cards (&lt;div class="cards-container"&gt;)</strong><br>
+                            <ul>
+                                <li>Uses &lt;div class="card"&gt; for individual volunteer programs, with an image, heading, description, and "Learn More" button.</li>
+                            </ul>
+
+                            <strong>- User Reviews (&lt;section class="reviews"&gt;)</strong>
+                            <ul>
+                                <li>Displays review cards (&lt;div class="review-card"&gt;) with ratings and testimonials.</li>
+                            </ul>
+
+                            <strong>- Feedback Form (&lt;section class="feedback-section"&gt;)</strong>
+                            <ul>
+                                <li>Allows users to rate their experience using emoji buttons.</li>
+                                <li>Allows users to submit feedback through a textarea.</li>
+                            </ul>
+
+                            <strong>- Footer Section (&lt;footer&gt;)</strong>
+                            <ul>
+                                <li>
+                                    Includes categorized links and social media icons styled using FontAwesome.
+                                </li>
+                            </ul>
+                        
+                            <strong>JavaScript Inclusion (&lt;script src="./js/script.js"&gt;&lt;/script&gt;)</strong>
+                            <ul>
+                                <li>
+                                    Suggests additional interactive behavior (e.g., sorting functionality or "Go to Top" button).
+                                </li>
+                            </ul>
+                        
+                            <h5>2. CSS Styling &amp; Techniques</h5>
+                        
+                            <strong>General Styles</strong><br><br>
+                            <strong>1. Font &amp; Colors</strong><br>
+                            <code>- body { font-family: Arial, sans-serif; color: #ffffff; line-height: 1.6; }</code><br>
+                            - Ensures a clean, readable text style.<br><br>
+                        
+                            <strong>2. Background Image for the Page</strong><br>
+                            <code>.volunteer-page { background-image: url("../images/volunteer_page/beach.jpg"); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat; }</code><br>
+                            - Provides a full-page background image with a fixed position, ensuring a consistent visual effect.<br><br>
+                        
+                            <strong>3. Content Container (.content-container)</strong><br>
+                            <code>background-color: rgba(0, 0, 0, 0.7); border-radius: 10px;</code><br>
+                            - A semi-transparent black background improves text readability.<br><br>
+                       
+                            <strong>4. Cards &amp; Reviews (Volunteer Programs &amp; Testimonials)</strong><br>
+                            - Flexbox Grid Layout for program cards<br>
+                            <code>.cards-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }</code><br><br>
+                        
+                            <strong>5. Card Hover Effect to improve interactivity:</strong><br>
+                            <code>.card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }</code><br>
+                            - Gives a floating effect when hovering over a card.<br><br>
+                        
+                            <strong>6. Sorting Box</strong><br>
+                            - Dropdown Styling with a Custom Icon:<br>
+                            <code>.sort-box select { background-image: url("data:image/svg+xml;utf8,&lt;svg fill='%234CAF50' ...&gt;"); background-repeat: no-repeat; background-position: right 8px center; }</code><br>
+                            - Custom dropdown design improves usability.<br><br>
+                        
+                            <strong>7. Review Cards</strong><br>
+                            - Styled similarly to program cards but smaller:<br>
+                            <code>.review-card { background-color: white; border-radius: 10px; padding: 20px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); }</code><br><br>
+                        
+                            <strong>8. Reviewer Details Formatting:</strong><br>
+                            <code>.review-card .reviewer { font-size: 0.8rem; color: #999; }</code><br><br>
+                        
+                            <strong>9. Feedback Section</strong><br>
+                            - Uses flexbox for form layout:<br>
+                            <code>.feedback-form { display: flex; flex-direction: column; gap: 20px; }</code><br><br>
+                        
+                            <strong>10. Emoji Rating Buttons with Hover Effects:</strong><br>
+                            <code>.emoji-btn:hover { transform: scale(1.1); border-color: #4CAF50; background-color: #f0f9f0; }</code><br><br>
+                        
+                            <strong>11. "Go to Top" Button</strong><br>
+                            - Positioned at the bottom right of the screen:<br>
+                            <code>#goToTopBtn { position: fixed; bottom: 20px; right: 30px; z-index: 99; border-radius: 50%; }</code><br><br>
+                        
+                            <strong>12. Changes color on hover:</strong><br>
+                            <code>#goToTopBtn:hover { background-color: #45a049; }</code><br>
+                            - Easy to understand selcted or not<br><br>
+                        
+                            <h5>3. Responsive Design</h5>
+                            - Uses media queries to adjust layouts for different screen sizes:<br>
+                            <code>@media (max-width: 1024px) { .card, .review-card { width: calc(50% - 20px); } }</code><br>
+                            <code>@media (max-width: 768px) { .card, .review-card { width: 100%; } .sort-box { justify-content: center; } }</code><br>
+                            - Cards stack vertically on smaller screens.<br>
+                            - Feedback buttons adjust for better touch usability.<br>
+                        </p> 
+
+                    <h3>Accessibility</h3>
+                        <p>
+                            <h5>Accessibility Features in the Volunteer Page</h5>
+                        
+                            The volunteer page was designed with accessibility in mind to ensure an inclusive user experience.<br><br>
+                        
+                            <strong>1. Semantic HTML</strong><br>
+                            - The page uses <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> elements to provide a clear document structure for screen readers.<br><br>
+                        
+                            <strong>2. Keyboard Navigation</strong><br>
+                            - Interactive elements such as buttons, links, and dropdowns are accessible via the keyboard using the <code>tab</code> key.<br><br>
+                        
+                            <strong>3. Alt Text for Images</strong><br>
+                            - All images have descriptive <code>alt</code> attributes to assist visually impaired users in understanding content.<br><br>
+                        
+                            <strong>4. Sufficient Color Contrast</strong><br>
+                            - Text and background colors maintain high contrast, ensuring readability for users with visual impairments.<br><br>
+                        
+                            <strong>5. Responsive Design</strong><br>
+                            - The layout adapts to different screen sizes, improving usability for users on mobile devices.<br><br>
+                        
+                            <strong>6. Form Accessibility</strong><br>
+                            - Labels are associated with form inputs, and placeholder text provides clear guidance for user interactions.<br><br>
+                        
+                            <strong>7. ARIA Attributes</strong><br>
+                            - Accessible Rich Internet Applications (ARIA) attributes are used for dynamic elements to improve screen reader support.<br><br>
+                        
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validationstudent1.html#volunteerVal">Go to validation page for volunteer page</a></p>
+
+                        
+                    <h3>Link to the volunteer page </h3>
+                        <p><a href="volunteer.html">Go to volunteer page</a></p>
+            </section>
+
+            <section><!--content page 1-->
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        <strong>Accessibility Features Implemented:</strong><br>
+                        - <em>Semantic HTML:</em> Used proper headings, lists, and sections for better screen reader navigation.<br>
+                        - <em>Alt Text for Images:</em> All images include descriptive alt attributes to aid visually impaired users.<br>
+                        - <em>Keyboard Navigation:</em> Ensured that interactive elements like buttons and links are accessible via the keyboard.<br>
+                        - <em>Contrast and Readability:</em> Chose colors and font sizes that enhance readability for all users.<br>
+                        - <em>Responsive Design:</em> The page adapts to different screen sizes, making it accessible on various devices.
+                    </p>
+                    
+
+                    <h3>Accessibility</h3>
+                    <p>
+                        <strong>Accessibility Considerations:</strong><br>
+                        - <em>Semantic HTML:</em> Used proper headings, sections, and lists for better screen reader support.<br>
+                        - <em>Alt Text for Images:</em> Included descriptive alt attributes for all images to assist visually impaired users.<br>
+                        - <em>Keyboard Navigation:</em> Ensured all links and buttons are accessible via keyboard controls.<br>
+                        - <em>Responsive Design:</em> Page adapts to different screen sizes for better usability on all devices.<br>
+                        - <em>Contrast & Readability:</em> Chose appropriate text color and font size to enhance visibility.<br>
+                    </p>
+                    
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validationstudent1.html#contentVal">Go to validation page for Content page 1</a></p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content1.html">Go to Content 1 page.</a></p>
+            </section>
+
+            <section><!--challanges-->
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <p>
+                    <strong>Challenges Faced and Solutions</strong><br><br>
+                    <em>1. Responsive Design Issues:</em> The navigation menu and content layout did not adjust well on smaller screens. <br>
+                    <strong>Solution:</strong> Used flexbox and media queries to improve adaptability, ensuring sections reflow properly.<br><br>
+                
+                    <em>2. Accessibility Improvements:</em> Ensuring proper screen reader support and keyboard navigation was difficult.<br>
+                    <strong>Solution:</strong> Implemented semantic HTML, added descriptive <code>alt</code> attributes for images, and ensured keyboard focus on interactive elements.<br><br>
+                
+                    <em>3. Performance Optimization:</em> The splash screen caused delays due to heavy animations.<br>
+                    <strong>Solution:</strong> Optimized animations and minimized resource usage for a smoother experience.<br><br>
+                
+                    <strong>Lessons Learned:</strong> Planning for responsiveness and accessibility from the beginning results in a more user-friendly and maintainable design.
+                </p>
+            </section>
+
+            <section><!--compilance-->
+                <h2 id="compliance"> Compliance</h2>
+                <p>
+                    <strong>Compliance with Janet Web Page Publication Regulations:</strong><br>
+                    Our web pages have been developed with adherence to key Janet regulations governing web publication, ensuring security, accessibility, and ethical content distribution.<br><br>
+                
+                    <em>1. Accessibility Compliance:</em> We implemented semantic HTML, proper heading structures, alt text for images, and keyboard navigability to align with accessibility standards, making the site usable for individuals with disabilities.<br><br>
+                
+                    <em>2. Data Privacy & Security:</em> No sensitive user data is collected or stored within these pages. External links and scripts are used responsibly, and security measures such as HTTPS are prioritized to prevent vulnerabilities.<br><br>
+                
+                    <em>3. Ethical & Legal Content:</em> The content adheres to ethical guidelines by providing accurate, well-researched information without misleading claims. All media assets, including images and icons, either belong to the project or are sourced from free-to-use platforms with proper attribution.<br><br>
+                
+                    <em>4. Performance & Network Efficiency:</em> The pages are optimized to ensure fast loading times, reducing unnecessary resource consumption and complying with Janet’s network efficiency policies.<br><br>
+                
+                    <strong>Understanding & Application:</strong> By following these regulations, we ensure that our web pages maintain ethical, legal, and technical standards while prioritizing user experience and accessibility.
+                </p>
+                
+                    
+            </section>
+
+            <section><!--references-->
+                <h2 id="ref">References</h2>
+                <p>
+                    <ul>
+                        <li>W3C. (2024). HTML Living Standard. Retrieved from:html.spec.whatwg.org/</li>
+                        <li>MDN Web Docs. (2024). CSS Flexible Box Layout. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout</li>
+                        <li>W3C. (2023). Web Content Accessibility Guidelines (WCAG) 2.2. Retrieved from: https://www.w3.org/TR/WCAG22/</li>
+                        <li>MDN Web Docs. (2024). Responsive design. Retrieved from: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design</li>
+                        <li>Nielsen Norman Group. (2023). Card Sorting: A Definitive Guide. Retrieved from: https://www.nngroup.com/articles/card-sorting-definition/</li>
+                        <li>CSS-Tricks. (2024). A Complete Guide to CSS Media Queries. Retrieved from: https://css-tricks.com/a-complete-guide-to-css-media-queries/</li>
+                        <li>Mozilla. (2024). Using CSS custom properties (variables). Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties</li>
+                        <li>Google Developers. (2024). Core Web Vitals. Retrieved from: https://web.dev/vitals/</li>
+                        <li>W3C. (2023). CSS Grid Layout Module Level 1. Retrieved from: https://www.w3.org/TR/css-grid-1/</li>
+                        <li>MDN Web Docs. (2024). Form validation. Retrieved from: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation</li>
+                        <li>OpenAI. (2024). ChatGPT [Large language model]. Retrieved from https://chat.openai.com</li>
+                    </ul>
+
+                </p>
+                </p>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                    <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Updated footer from home.html -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <h3>CONTENT</h3>
+                    <ul>
+                        <li><a href="content1.html">Content 1</a></li>
+                        <li><a href="content2.html">Content 2</a></li>
+                        <li><a href="content3.html">Content 3</a></li>
+                        <li><a href="content4.html">Content 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>EDITOR</h3>
+                    <ul>
+                        <li><a href="pageeditorstudent1.html">Editor 1</a></li>
+                        <li><a href="pageeditorstudent2.html">Editor 2</a></li>
+                        <li><a href="pageeditorstudent3.html">Editor 3</a></li>
+                        <li><a href="pageeditorstudent4.html">Editor 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>VALIDATION</h3>
+                    <ul>
+                        <li><a href="validationstudent1.html">Student 1</a></li>
+                        <li><a href="validationstudent2.html">Student 2</a></li>
+                        <li><a href="validationstudent3.html">Student 3</a></li>
+                        <li><a href="validationstudent4.html">Student 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Layout</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="user_profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="social-icons">
+                <a href="https://web.facebook.com/SustDev?_rdc=1&_rdr#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/SustDev" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.flickr.com/photos/sustdev/ " class="social-icon"><i class="fab fa-flickr"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>Design by G24 Group 6 </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- External JavaScript files-->
+    <script src="./js/script.js"></script> 
+</body>
+</html>

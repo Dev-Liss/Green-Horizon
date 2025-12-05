@@ -1,0 +1,444 @@
+/* ===========================================
+   GENERAL STYLES
+   =========================================== */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    color: #ffffff; 
+    line-height: 1.6; 
+}
+
+/* Background for volunteer page */
+.volunteer-page {
+    background-image: url("../images/volunteer_page/beach.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Content container styles with semi-transparent black background */
+.content-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    margin: 20px auto;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Styles for the header element */
+header h1 {
+    margin: 0; 
+    font-size: 2.5rem; 
+}
+
+/* Styles for the main content area */
+main {
+    padding: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Heading styles */
+h2 {
+    color: #5ddb61; 
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+}
+
+h3 {
+    color: #5ddb61; 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1rem; 
+    color: #e0e0e0; 
+}
+
+/* Section divider line */
+.section-divider {
+    border-color: #555; 
+    border-width: 1px;
+    margin: 40px 0;
+}
+
+/* -------- SORTING BOX STYLES -------- */
+.sort-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.sort-box label {
+    margin-right: 10px;
+    font-weight: 600;
+    color: #ffffffeb;
+}
+
+.sort-box select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.437);
+    font-size: 0.9rem;
+    color: #ffffffc6;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.sort-box select:hover {
+    border-color: #4CAF50;
+}
+
+.sort-box select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Style for the dropdown arrow */
+.sort-box select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%234CAF50' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 30px;
+}
+
+/* ---------- CARD STYLES ---------- */
+
+/* Styles for the container -program cards */
+.cards-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
+}
+
+/* Styles for individual program cards */
+.card {
+    background-color: white; 
+    border: 1px solid #11c51a; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: calc(25% - 50px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+/* Hover effect for program cards */
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styles for images inside program cards */
+.card img {
+    width: 100%; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+}
+
+/* Styles for the title inside program cards */
+.card h3 {
+    margin: 10px 0; 
+    font-size: 1.25rem; 
+}
+
+/* Styles for the description inside program cards */
+.card p {
+    font-size: 0.9rem; 
+    color: #666; 
+    margin-bottom: 15px; 
+}
+
+/* Styles for the button inside program cards */
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+
+/* Hover effect for the button inside program cards */
+.card button:hover {
+    background-color: #45a049; 
+}
+
+/* -------------- REVIEWS SECTION STYLES -------------- */
+/* Styles for the reviews section */
+.reviews {
+    margin-top: 40px; 
+}
+
+/* Styles for the rating summary */
+.rating-summary {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+/* Styles for the rating text */
+.rating-summary .rating {
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #4CAF50; 
+}
+
+/* Styles for the subtitle text */
+.rating-summary .subtitle {
+    font-size: 1rem; 
+    color: #e0e0e0; 
+}
+
+/* Styles for the container holding the review cards */
+.review-cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Increased gap for better spacing */
+    justify-content: center; 
+}
+
+/* Styles for individual review cards */
+.review-card {
+    background-color: white; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: calc(25% - 60px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+/* Hover effect for review cards */
+.review-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styles for the title inside review cards */
+.review-card h4 {
+    margin: 0 0 10px; 
+    color: #4CAF50; 
+    font-size: 1.25rem; 
+}
+
+/* Styles for the review text inside review cards */
+.review-card p {
+    font-size: 0.9rem; 
+    color: #666; 
+    margin: 10px 0; 
+}
+
+/* Styles for the link inside review cards */
+.review-card a {
+    color: #4CAF50; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    transition: color 0.3s; 
+}
+
+/* Hover effect for the link inside review cards */
+.review-card a:hover {
+    color: #45a049; 
+    text-decoration: underline; 
+}
+
+/* Styles for the reviewer text inside review cards */
+.review-card .reviewer {
+    font-size: 0.8rem; 
+    color: #999; 
+    margin-top: 10px; 
+}
+
+/* ----------------- FEEDBACK FORM SECTION STYLES ----------------- */
+.feedback-section {
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.feedback-section h2 {
+    color: #4CAF50; 
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Rating input styles */
+.rating-input {
+    margin-bottom: 10px;
+}
+
+.rating-input p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.emoji-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.emoji-btn {
+    background: none;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.emoji-btn:hover {
+    transform: scale(1.1);
+    border-color: #4CAF50;
+    background-color: #f0f9f0;
+}
+
+.emoji-btn.selected {
+    border-color: #4CAF50;
+    background-color: #f0f9f0;
+}
+
+/* Textarea styles */
+.feedback-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Button styles */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn {
+    background-color: #f1f1f1;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Go to top button style */
+#goToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#goToTopBtn:hover {
+    background-color: #45a049;
+}
+
+/* ====================== RESPONSIVE DESIGN ============================ */
+
+/* Styles for screens up to 1024px wide */
+@media (max-width: 1024px) {
+    .card, .review-card {
+        width: calc(50% - 20px); 
+    }
+    
+    main {
+        padding: 30px;
+    }
+}
+
+/* Styles for screens up to 768px wide */
+@media (max-width: 768px) {
+    .card, .review-card {
+        width: 100%; 
+    }
+
+    .sort-box {
+        justify-content: center;
+    }
+    
+    .emoji-buttons {
+        justify-content: center;
+    }
+    
+    .form-buttons {
+        flex-direction: column-reverse;
+    }
+    
+    .submit-btn, .cancel-btn {
+        width: 100%;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .content-container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
